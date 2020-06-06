@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>图灵机的随笔记</title>
-    <link>https://dkturingfz.github.io.git/</link>
+    <link>https://dkturingfz.github.io/</link>
     <description>Recent content on 图灵机的随笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
     <lastBuildDate>Sat, 06 Jun 2020 16:22:33 +0800</lastBuildDate>
     
-	<atom:link href="https://dkturingfz.github.io.git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dkturingfz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>图灵机的随笔记</title>
-      <link>https://dkturingfz.github.io.git/posts/about/</link>
+      <link>https://dkturingfz.github.io/posts/about/</link>
       <pubDate>Sat, 06 Jun 2020 16:22:33 +0800</pubDate>
       
-      <guid>https://dkturingfz.github.io.git/posts/about/</guid>
+      <guid>https://dkturingfz.github.io/posts/about/</guid>
       <description>这个站点打算用来做一些记录，记录最近的生活，最近的感悟，当然最重要的是记录最近学到的一些东东。
 暂时分成5个部分：
   专业学习 作为一个混科研圈的，虽然到目前为止，感觉啥事都干了一点，但是啥事都不精通，美其名曰以“以兴趣为导向”，不过内心深知，这也就是骗骗自己罢了。没关系，从现在开始，好好整理一下以前学的那些东东。
