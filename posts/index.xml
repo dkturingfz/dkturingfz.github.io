@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 图灵机的随笔记</title>
+    <link>https://dkturingfz.github.io.git/posts/</link>
+    <description>Recent content in Posts on 图灵机的随笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Sat, 06 Jun 2020 16:22:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://dkturingfz.github.io.git/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>图灵机的随笔记</title>
+      <link>https://dkturingfz.github.io.git/posts/about/</link>
+      <pubDate>Sat, 06 Jun 2020 16:22:33 +0800</pubDate>
+      
+      <guid>https://dkturingfz.github.io.git/posts/about/</guid>
+      <description>这个站点打算用来做一些记录，记录最近的生活，最近的感悟，当然最重要的是记录最近学到的一些东东。
+暂时分成5个部分：
+  专业学习 作为一个混科研圈的，虽然到目前为止，感觉啥事都干了一点，但是啥事都不精通，美其名曰以“以兴趣为导向”，不过内心深知，这也就是骗骗自己罢了。没关系，从现在开始，好好整理一下以前学的那些东东。
+  计算机的学习 一直对计算机的学习莫名的感兴趣。正好用需要用到一些生物信息的内容，也就开始学起来了。别人学Python，很快就学得很好了。我也断断续续折腾了几年了，一直没什么进展。主要是因为平常其实用不太到。R语言就相对好很多，毕竟还是需要经常用的。想想还是放弃Python算了，把R学好，然后据说新的Julia还不错，不学Python了就学Julia吧。还有就是机器学习的东东，以及它引申出来的数学也放在这里了。
+  摄影的学习 最近心血来潮想学摄影了，买了一堆的廉价器材和一堆二手书。希望不要花了冤枉钱。
+  读书笔记 京东和当当常年的满100减50活动，让我屯了一大堆的书了。要赶紧消化掉。没事就在这里写写吧。最近对《资治通鉴》很感兴趣。
+  日常记录 虽然大多数时间比较无聊，但是还是有很多很精彩的时候的。记录下来，应该也是一件很有意思的事情。
+  </description>
+    </item>
+    
+  </channel>
+</rss>
