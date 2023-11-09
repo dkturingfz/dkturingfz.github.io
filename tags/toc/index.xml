@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TOC on Hugo Prose</title>
+    <title>TOC on PIG的记录日常</title>
     <link>https://dkturingfz.github.io/tags/toc/</link>
-    <description>Recent content in TOC on Hugo Prose</description>
+    <description>Recent content in TOC on PIG的记录日常</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <atom:link href="https://dkturingfz.github.io/tags/toc/index.xml" rel="self" type="application/rss+xml" />

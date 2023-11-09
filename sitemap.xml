@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dkturingfz.github.io/card/philosophy/</loc>
+    <loc>https://dkturingfz.github.io/card/style/</loc>
   </url><url>
     <loc>https://dkturingfz.github.io/card/projects/</loc>
   </url><url>
@@ -61,6 +61,15 @@
   </url><url>
     <loc>https://dkturingfz.github.io/tags/seneca/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dkturingfz.github.io/tags/friendship/</loc>
+    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dkturingfz.github.io/post/2019/07/29/letter-3-on-true-and-false-friendship/</loc>
+    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dkturingfz.github.io/tags/trust/</loc>
+    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dkturingfz.github.io/categories/essay/</loc>
     <lastmod>2017-06-14T00:00:00+00:00</lastmod>

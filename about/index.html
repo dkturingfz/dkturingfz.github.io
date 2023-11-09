@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title> About Hugo Prose | Hugo Prose</title>
+    <title> About Hugo Prose | PIG的记录日常</title>
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/css/article.min.css,npm/@xiee/utils/css/heading-anchor.min.css">
@@ -23,7 +23,7 @@
     <nav class="menu">
     <ul>
       <li class="left">
-        <a href="/"><span>Hugo Prose</span></a>
+        <a href="/"><span>PIG的记录日常</span></a>
       </li>
       
       <li>
@@ -40,10 +40,6 @@
       
       <li id="menu-search">
         <a href="/#">Search</a>
-      </li>
-      
-      <li>
-        <a href="/index.xml">Subscribe</a>
       </li>
       
     </ul>
@@ -100,34 +96,32 @@ theme.</p>
 <p>Each page has a menu in the header and a menu in the footer. The header menu is
 defined in the <code>header</code> option in <code>menu</code> in <code>config.yaml</code>, and similarly, the
 footer menu is defined in the <code>footer</code> option, e.g.,</p>
-<pre><code class="language-yaml">menu:
-  header:
-    - name: Home
-      url: &quot;&quot;
-      weight: 1
-    - name: About
-      url: &quot;about/&quot;
-      weight: 2
-  footer:
-    - name: Contact
-      url: &quot;404.html&quot;
-      weight: 1
-    - name: Categories
-      url: &quot;categories/&quot;
-      weight: 2
-      pre: &quot;optional&quot;
-</code></pre>
-<p>The <code>url</code> of a menu item can be either a relative URL pointing to a page on this
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">header</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Home</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">About</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;about/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">footer</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Contact</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;404.html&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Categories</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;categories/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">pre</span>: <span style="color:#e6db74">&#34;optional&#34;</span>
+</span></span></code></pre></div><p>The <code>url</code> of a menu item can be either a relative URL pointing to a page on this
 website, or an external link (e.g., <code>url: &quot;https://github.com/yihui&quot;</code>). The
 order of the menu items is determined by the <code>weight</code> values. If a menu item has
 a <code>pre</code> value, it will be used as the class of the menu item. The special value
 <code>optional</code> indicates that this menu item will be hidden on small screens.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>The header menu can be made sticky via the parameter <code>stickyMenu</code> in
 <code>config.yaml</code>:</p>
-<pre><code class="language-yaml">params:
-  stickyMenu: true
-</code></pre>
-<h3 id="home-page">Home page</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stickyMenu</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="home-page">Home page</h3>
 <p>The body of the home page consists of an introduction, followed by a series of
 info cards, and then a number of the latest posts and pages.</p>
 <ul>
@@ -140,38 +134,34 @@ contain arbitrary elements.</p>
 is displayed on the home page as a separate card. The title is displayed
 vertically on the left or right side.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> If you want to customize the style
 of a certain card, you may use the YAML option <code>style</code> in the file, e.g.,</p>
-<pre><code class="language-yaml">---
-title: &quot;Courses&quot;
-style: &quot;background: darkorange; color: white;&quot;
----
-</code></pre>
-<p>This will add a dark orange background to the card, and change the color of
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Courses&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">style</span>: <span style="color:#e6db74">&#34;background: darkorange; color: white;&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>This will add a dark orange background to the card, and change the color of
 text to white. You can use any CSS styles here (e.g., <code>font-size</code>,
 <code>background-image</code>, and <code>padding</code>).</p>
 </li>
 <li>
 <p>The number of latest posts and pages can be defined via the <code>homePosts</code>
 option in <code>params</code> in <code>config.yaml</code>, e.g.,</p>
-<pre><code class="language-yaml">params:
-  homePosts: 10
-</code></pre>
-<p>The default is 6.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">homePosts</span>: <span style="color:#ae81ff">10</span>
+</span></span></code></pre></div><p>The default is 6.</p>
 </li>
 <li>
 <p>The <code>mainSections</code> parameter can be used to select the sections of pages to
 be included on the home page, e.g.,</p>
-<pre><code class="language-yaml">params:
-  mainSections: [&quot;post&quot;, &quot;news&quot;]
-</code></pre>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mainSections</span>: [<span style="color:#e6db74">&#34;post&#34;</span>, <span style="color:#e6db74">&#34;news&#34;</span>]
+</span></span></code></pre></div></li>
 </ul>
 <h3 id="footer">Footer</h3>
 <p>Besides the menu in the footer, you can specify a copyright statement in the
 <code>footer</code> parameter in <code>config.yaml</code>, e.g.,</p>
-<pre><code class="language-yaml">params:
-  footer: &quot;&amp;copy; Frida Gomam 2015 -- 2020&quot;
-</code></pre>
-<h3 id="comments">Comments</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">footer</span>: <span style="color:#e6db74">&#34;&amp;copy; Frida Gomam 2015 -- 2020&#34;</span>
+</span></span></code></pre></div><h3 id="comments">Comments</h3>
 <p>Disqus, Utterances</p>
 <h3 id="searching">Searching</h3>
 <p>This theme supports searching out of the box based on
@@ -180,38 +170,33 @@ be included on the home page, e.g.,</p>
 <li>
 <p>The site needs to generate a JSON index. This is done via a layout file
 <code>index.json.json</code> in <code>layouts/_default/</code>, and the config in <code>config.yaml</code>:</p>
-<pre><code class="language-yaml">outputs:
-  home: [html, rss, json]
-</code></pre>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">outputs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">home</span>: [<span style="color:#ae81ff">html, rss, json]</span>
+</span></span></code></pre></div></li>
 <li>
 <p>A menu item with the ID <code>menu-search</code> configured in <code>config.yaml</code>, e.g.,</p>
-<pre><code class="language-yaml">menu:
-  header:
-    - name: Search
-      url: &quot;#&quot;
-      identifier: menu-search
-</code></pre>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">header</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Search</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">identifier</span>: <span style="color:#ae81ff">menu-search</span>
+</span></span></code></pre></div></li>
 <li>
 <p>The version of Fuse can be configured via the parameter <code>fuseVersion</code> in
 <code>config.yaml</code>, e.g.,</p>
-<pre><code class="language-yaml">params:
-  fuseVersion: 6.4.3
-</code></pre>
-<p>If no <code>fuseVersion</code> is specified, the latest version of Fuse.js will be
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">fuseVersion</span>: <span style="color:#ae81ff">6.4.3</span>
+</span></span></code></pre></div><p>If no <code>fuseVersion</code> is specified, the latest version of Fuse.js will be
 used. You may also download a copy of Fuse.js to the <code>static/</code> folder of
 your site and use this copy instead of loading it from CDN. To do that, you
 may download Fuse.js to, say, <code>static/js/fuse.js</code> and modify the partial
 template <code>layouts/partials/foot_custom.html</code>. Replace</p>
-<pre><code class="language-html">{{ with .Site.Params.fuseVersion }}
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/fuse.js@{{ . }}&quot;&gt;&lt;/script&gt;
-{{ end }}
-</code></pre>
-<p>with</p>
-<pre><code class="language-html">&lt;script src=&quot;{{ relURL &quot;/js/fuse.js&quot; }}&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>That way, you can also use search when viewing the site offline, because
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ with .Site.Params.fuseVersion }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/fuse.js@{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ relURL &#34;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">js</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">fuse</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">js</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>That way, you can also use search when viewing the site offline, because
 Fuse.js is no longer loaded from CDN.</p>
 </li>
 </ul>
@@ -242,13 +227,12 @@ you want to write arbitrary sidenotes, use the classes <code>side</code> and
 <li>Go to bed</li>
 </ul>
 </div>
-<pre><code class="language-html">&lt;div class=&quot;side side-left&quot;&gt;
-
-Content to be displayed as a sidenote.
-
-&lt;/div&gt;
-</code></pre>
-<h3 id="appendix">Appendix</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;side side-left&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Content to be displayed as a sidenote.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h3 id="appendix">Appendix</h3>
 <ul>
 <li>
 <p>Author&rsquo;s bio</p>
@@ -270,35 +254,32 @@ For listing pages, draft articles are also indicated by the background.</p>
 <h2 id="floats">Floats</h2>
 <h3 id="full-width-elements">Full-width elements</h3>
 <p>Apply the class <code>fullwidth</code>, e.g.,</p>
-<pre><code class="language-html">&lt;div class=&quot;fullwidth&quot;&gt;
-
-Content to be displayed with its maximum width.
-
-&lt;/div&gt;
-</code></pre>
-<div class="fullwidth">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fullwidth&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Content to be displayed with its maximum width.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><div class="fullwidth">
 </div>
 <p>If you want the full-width element to be scrollable, you can apply an additional
 class <code>fullscroll</code>, e.g.,</p>
-<pre><code class="language-html">&lt;div class=&quot;fullwidth fullscroll&quot;&gt;
-
-Super wide content to be scrolled horizontally.
-
-&lt;/div&gt;
-</code></pre>
-<div class="fullwidth fullscroll">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fullwidth fullscroll&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Super wide content to be scrolled horizontally.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><div class="fullwidth fullscroll">
 </div>
 <h3 id="embedded-elements">Embedded elements</h3>
 <p>Use the <code>embed-left</code> or <code>embed-right</code> class to embed a content block to be
 floated to the left or right, and the block will exceed the article margin by
 200px, e.g.,</p>
-<pre><code class="language-html">&lt;div class=&quot;embed-right&quot;&gt;
-
-Content to be embedded onto the margin.
-
-&lt;/div&gt;
-</code></pre>
-<div class="embed-right">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;embed-right&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Content to be embedded onto the margin.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><div class="embed-right">
 <iframe src="https://player.vimeo.com/video/469252441" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 <p>One application is to embed videos in an article, when the video needs a
@@ -313,13 +294,12 @@ floated back into the article as normal block-level elements.</p>
 <h3 id="quotes">Quotes</h3>
 <p>Use the <code>quote-left</code> or <code>quote-right</code> class to make content float to the left or
 right.</p>
-<pre><code class="language-html">&lt;div class=&quot;quote-left&quot;&gt;
-
-A quote to be floated to the left.
-
-&lt;/div&gt;
-</code></pre>
-<p>The quotes do not have to be literally quotes. These environments can contain
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;quote-left&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>A quote to be floated to the left.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>The quotes do not have to be literally quotes. These environments can contain
 any content, although quotes may be the most common application.</p>
 <div class="quote-left">
 <blockquote>
@@ -475,30 +455,19 @@ helped a lot with our implementation of the client-side search.</p>
 
 
 
-<div>
-  <div class="side side-left"><h3>欢迎修订</h3></div>
-  
-  
-  
-    
-    
-  
-  如果您发现本文里含有任何错误（包括错别字和标点符号），欢迎<a href="https://github.com/yihui/hugo-prose/edit/master/exampleSite/content/about.md" id="edit-link">在本站的 GitHub 项目里提交修订意见。</a>
-</div>
-
 
 
 
 <div>
   <div class="side side-left"><h3>引用本文</h3></div>
   <p>如果您使用了本文的内容，请按照以下方式引用：</p>
-  <pre><code>Yihui Xie (2023). About Hugo Prose. Hugo Prose. https://dkturingfz.github.io/about/</code></pre>
+  <pre><code>Yihui Xie (2023). About Hugo Prose. PIG的记录日常. https://dkturingfz.github.io/about/</code></pre>
   <p>BibTeX citation</p>
   <pre><code>@misc{
   title = "About Hugo Prose",
   author = "Yihui Xie",
   year = "2023",
-  journal = "Hugo Prose",
+  journal = "PIG的记录日常",
   note = "https://dkturingfz.github.io/about/"
 }</code></pre>
 </div>
@@ -537,7 +506,7 @@ helped a lot with our implementation of the client-side search.</p>
   <div class="footer">
   
   <ul class="copyright">
-    <li>© <a href="https://en.wikipedia.org/wiki/Seneca_the_Younger">Lucius Annaeus Seneca</a> 4 BC &ndash; AD 65</li>
+    <li>© 我随便说两句</li>
   </ul>
   
   <ul>
@@ -552,10 +521,6 @@ helped a lot with our implementation of the client-side search.</p>
     
     <li class="optional">
       <a href="/tags/">Tags</a>
-    </li>
-    
-    <li id="menu-edit">
-      <a href="#">Suggest an edit</a>
     </li>
     
     <li>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Prose</title>
+    <title>Tags on PIG的记录日常</title>
     <link>https://dkturingfz.github.io/tags/</link>
-    <description>Recent content in Tags on Hugo Prose</description>
+    <description>Recent content in Tags on PIG的记录日常</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
@@ -48,6 +48,20 @@
       <link>https://dkturingfz.github.io/tags/seneca/</link>
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       <guid>https://dkturingfz.github.io/tags/seneca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friendship</title>
+      <link>https://dkturingfz.github.io/tags/friendship/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://dkturingfz.github.io/tags/friendship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trust</title>
+      <link>https://dkturingfz.github.io/tags/trust/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://dkturingfz.github.io/tags/trust/</guid>
       <description></description>
     </item>
     <item>

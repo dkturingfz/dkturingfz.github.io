@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title> Hello R Markdown | Hugo Prose</title>
+    <title> Hello R Markdown | PIG的记录日常</title>
     
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/css/article.min.css,npm/@xiee/utils/css/heading-anchor.min.css">
@@ -15,7 +15,7 @@
 <meta name="twitter:title" content="Hello R Markdown"/>
 <meta name="twitter:description" content="R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu."/>
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu."/>
 
 
   </head>
@@ -25,7 +25,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     <nav class="menu">
     <ul>
       <li class="left">
-        <a href="/"><span>Hugo Prose</span></a>
+        <a href="/"><span>PIG的记录日常</span></a>
       </li>
       
       <li>
@@ -42,10 +42,6 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <li id="menu-search">
         <a href="/#">Search</a>
-      </li>
-      
-      <li>
-        <a href="/index.xml">Subscribe</a>
       </li>
       
     </ul>
@@ -80,35 +76,33 @@ Frida Gomam
 <h1 id="r-markdown">R Markdown</h1>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
-<pre><code class="language-r">summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932
-</code></pre>
-<h1 id="including-plots">Including Plots</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(cars)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##      speed           dist       </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  Min.   : 4.0   Min.   :  2.00  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  1st Qu.:12.0   1st Qu.: 26.00  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  Median :15.0   Median : 36.00  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  Mean   :15.4   Mean   : 42.98  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  3rd Qu.:19.0   3rd Qu.: 56.00  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##  Max.   :25.0   Max.   :120.00</span>
+</span></span><span style="display:flex;"><span>fit <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(dist <span style="color:#f92672">~</span> speed, data <span style="color:#f92672">=</span> cars)
+</span></span><span style="display:flex;"><span>fit
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Call:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## lm(formula = dist ~ speed, data = cars)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Coefficients:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## (Intercept)        speed  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##     -17.579        3.932</span>
+</span></span></code></pre></div><h1 id="including-plots">Including Plots</h1>
 <p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre><code class="language-r">par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
-</code></pre>
-<div class="figure">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mar <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pie</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">280</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">20</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#39;Sky&#39;</span>, <span style="color:#e6db74">&#39;Sunny side of pyramid&#39;</span>, <span style="color:#e6db74">&#39;Shady side of pyramid&#39;</span>),
+</span></span><span style="display:flex;"><span>  col <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#39;#0292D8&#39;</span>, <span style="color:#e6db74">&#39;#F7EA39&#39;</span>, <span style="color:#e6db74">&#39;#C4B632&#39;</span>),
+</span></span><span style="display:flex;"><span>  init.angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">-50</span>, border <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><div class="figure">
 <img src="https://dkturingfz.github.io/post/2020/12/01/hello-r-markdown/index.en_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption"><span id="fig:pie"></span>Figure 1: A fancy pie chart.</p>
 </div>
@@ -143,29 +137,19 @@ pie(
 
 
 
-<div>
-  <div class="side side-left"><h3>欢迎修订</h3></div>
-  
-  
-  
-    
-  
-  如果您发现本文里含有任何错误（包括错别字和标点符号），欢迎<a href="https://github.com/yihui/hugo-prose/edit/master/exampleSite/content/post%5c2020-12-01-r-rmarkdown%5cindex.en.Rmd" id="edit-link">在本站的 GitHub 项目里提交修订意见。</a>
-</div>
-
 
 
 
 <div>
   <div class="side side-left"><h3>引用本文</h3></div>
   <p>如果您使用了本文的内容，请按照以下方式引用：</p>
-  <pre><code>Frida Gomam (2020). Hello R Markdown. Hugo Prose. https://dkturingfz.github.io/post/2020/12/01/hello-r-markdown/</code></pre>
+  <pre><code>Frida Gomam (2020). Hello R Markdown. PIG的记录日常. https://dkturingfz.github.io/post/2020/12/01/hello-r-markdown/</code></pre>
   <p>BibTeX citation</p>
   <pre><code>@misc{
   title = "Hello R Markdown",
   author = "Frida Gomam",
   year = "2020",
-  journal = "Hugo Prose",
+  journal = "PIG的记录日常",
   note = "https://dkturingfz.github.io/post/2020/12/01/hello-r-markdown/"
 }</code></pre>
 </div>
@@ -207,7 +191,7 @@ pie(
   <div class="footer">
   
   <ul class="copyright">
-    <li>© <a href="https://en.wikipedia.org/wiki/Seneca_the_Younger">Lucius Annaeus Seneca</a> 4 BC &ndash; AD 65</li>
+    <li>© 我随便说两句</li>
   </ul>
   
   <ul>
@@ -222,10 +206,6 @@ pie(
     
     <li class="optional">
       <a href="/tags/">Tags</a>
-    </li>
-    
-    <li id="menu-edit">
-      <a href="#">Suggest an edit</a>
     </li>
     
     <li>
